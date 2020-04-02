@@ -25,13 +25,6 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 
-/**
- * Main Activity of the AboutMe app. This app demonstrates:
- *     * Getting user input with an EditText.
- *     * Click handler for a Button to retrieve text from an EditText and set it in a TextView.
- *     * Setting a click handler on a TextView.
- *     * Setting the visibility status of a view.
- */
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,11 +40,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    /**
-     * Click handler for the DONE button.
-     * Hides the EditText and the DONE button.
-     * Sets the EditText content to the TextView and displays it.
-     */
     private fun addNickname(view: View) {
         val editText = findViewById<EditText>(R.id.nickname_edit)
         val nicknameTextView = findViewById<TextView>(R.id.nickname_text)
@@ -67,11 +55,6 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    /**
-     * Click handler for the nickname TextView.
-     * Displays the EditText and the DONE button.
-     * Hides the nickname TextView.
-     */
     private fun updateNickname(view: View) {
         val editText = findViewById<EditText>(R.id.nickname_edit)
         val doneButton = findViewById<Button>(R.id.done_button)
